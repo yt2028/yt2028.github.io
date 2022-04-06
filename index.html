@@ -22,59 +22,61 @@
     </div>
     </header>
     <main>
+        <!-------------------------------article------------------------------->
+        <article>
+            <!---------------------------sub_title----------------------------->
+            <h2 class="subtitle" style="text-align:center">ようこそ，ゆっくりしていってね！</h2>
+            <marquee width="300" bgcolor="#ff9933" behavior="alternate" scrolldelay="10" color="black">Sorry, this site is Japanese only!</marquee>
 
-        <!---------------------------sub_title----------------------------->
-        <h2 class="subtitle" style="text-align:center">ようこそ，ゆっくりしていってね！</h2>
-        <marquee width="300" bgcolor="#ff9933" behavior="alternate" scrolldelay="10" color="black">Sorry, this site is Japanese only!</marquee>
+            <!------------------------------time------------------------------->
+            <br>
+            <span id="view_clock"></span>
+            <script type="text/javascript">
+                timerID = setInterval('clock()', 500); //0.5秒毎にclock()を実行
 
-        <!------------------------------time------------------------------->
-        <br>
-        <span id="view_clock"></span>
-        <script type="text/javascript">
-            timerID = setInterval('clock()', 500); //0.5秒毎にclock()を実行
+                function clock() {
+                document.getElementById("view_clock").innerHTML = getNow();
+                }
 
-            function clock() {
-            document.getElementById("view_clock").innerHTML = getNow();
-            }
+                function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1; //１を足すこと
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
 
-            function getNow() {
-            var now = new Date();
-            var year = now.getFullYear();
-            var mon = now.getMonth() + 1; //１を足すこと
-            var day = now.getDate();
-            var hour = now.getHours();
-            var min = now.getMinutes();
-            var sec = now.getSeconds();
+                //出力用
+                var s = year + "/" + mon + "/" + day + "/" + hour + ":" + min + ":" + sec;
+                return s;
+                }
+            </script>
 
-            //出力用
-            var s = year + "/" + mon + "/" + day + "/" + hour + ":" + min + ":" + sec;
-            return s;
-            }
-        </script>
+            <!-----------------------------log--------------------------------->
+            <h2>更新履歴</h2>
+            <div class="log">
+                サイトのレイアウトを改良しました(2022/4/6)<br/>
+                日記を更新しました(2021/8/28)<br/>
+                日記,管理人を更新しました(2021/5/2)<br />
+                日記を更新しました(2021/3/25)<br />
 
-        <!-----------------------------log--------------------------------->
-        <h2>更新履歴</h2>
-        <div class="log">
-            サイトのレイアウトを改良しました(2022/4/6)<br/>
-            日記を更新しました(2021/8/28)<br/>
-            日記,管理人を更新しました(2021/5/2)<br />
-            日記を更新しました(2021/3/25)<br />
+            </div>
 
-        </div>
-
-        <h2>サイトのデザインについて</h2>
-        <p>
-            まず始めに，このサイトをアクセスされた方はこう思ったでしょう．「いつの時代のサイトだよ」と．安心してください（?）．ばりばりの令和に制作されたサイトです．
-        </p>
-        <h2>サイトの内容</h2>
-        <p>
-            このサイトでは主に製作・制作・購入したものの紹介します．<br>
-            その他にも備忘録としてメモ代わりに利用しようと考えています．
-        </p>
-
+            <h2>サイトのデザインについて</h2>
+            <p>
+                まず始めに，このサイトをアクセスされた方はこう思ったでしょう．「いつの時代のサイトだよ」と．安心してください（?）．ばりばりの令和に制作されたサイトです．
+            </p>
+            <h2>サイトの内容</h2>
+            <p>
+                このサイトでは主に製作・制作・購入したものの紹介します．<br>
+                その他にも備忘録としてメモ代わりに利用しようと考えています．
+            </p>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi"></aside>
     </main>
-    <!------------------------navigation_menu----------------------------------->
-    <div id="navi"></div>
+    
 </body>
 </html>
 
