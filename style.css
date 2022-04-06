@@ -67,7 +67,6 @@ h1.page_title{
     scrollbar-face-color: #fff; /* IE などのスクロールバーの色設定 */
     scrollbar-track-color: #fff;
     -webkit-overflow-scrolling: touch; /* スマホ用の慣性スクロール */
-    order: 1;
 }
 .side_menu a {
 	display: block;
