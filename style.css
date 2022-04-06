@@ -24,11 +24,15 @@ header{
 }
 /* main */
 main {
-    
+    display: flex;
+    margin: 0 10px 10px 10px;
+    flex-direction: row-reverse;
+}
+
+#content{
     width: 80%;  /* side_menuは20%左揃え */ 
-    float: right;
-    text-align: center;
-    
+    margin-left: 6px;
+    padding-left: 3px;
 }
 
 /* bread crumb */
@@ -59,7 +63,6 @@ h1.page_title{
 
 /* side_menu */
 .side_menu {
-    float: left;  /* mianは80%右揃え */
     width: 20%;
     height: 100vh;
     background: #dae0e6; /* side_menuの背景色 */
