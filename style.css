@@ -30,35 +30,57 @@ main {
 }
 
 #content{
-    width: 80%;  /* side_menuは20%左揃え */ 
+    width: 80%;  /* articleは80% */
     margin-left: 6px;
     padding-left: 3px;
 }
 
 /* bread crumb */
 .breadcrumb{
-    width: 80%;  /* side_menuは20%左揃え */ 
+    width: 80%;  /* side_menuは20% */ 
     text-align: left;
 }
 
 
-/* Frame */
-/* top_title */
-h1.top_title{
-    font-family: 'Times New Roman', Times, serif;
-    border: solid 10px #0000ff;
-    margin: 30px 50px;
-    padding: 10px;
-    
+/* article */
+.title {
+    margin: 0 0 36px 5px;
+}
+  
+.title h1 {
+    margin: 0;
+    padding: 6px;
+    text-align: center;
 }
 
-/* page_title */
-h1.page_title{
-    border: double 10px #0000ff;
-    margin: 30px 100px;
-    padding: 10px;
-    
+.title h2{
+    margin: 0;
+    padding: 6px;
+    text-align: center;
 }
+
+.title p {
+    margin: 16px 8px;
+    text-indent: 1em;
+}
+
+.normal-section {
+    margin: 0 0 36px 5px;
+}
+
+.normal-section h2 {
+    margin: 0;
+    padding: 6px;
+    background: #f4f4f4;
+    border-left: solid 6px #5bb7ae;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.normal-section p {
+    margin: 16px 8px;
+    text-indent: 1em;
+}
+
 
 
 /* side_menu */
@@ -67,6 +89,7 @@ h1.page_title{
     height: 100vh;
     background: #dae0e6; /* side_menuの背景色 */
     overflow-y: scroll; /* 縦方向のスクロールバーを表示 */
+    order: 1; /* 左端
     scrollbar-face-color: #fff; /* IE などのスクロールバーの色設定 */
     scrollbar-track-color: #fff;
     -webkit-overflow-scrolling: touch; /* スマホ用の慣性スクロール */
@@ -74,51 +97,18 @@ h1.page_title{
 .side_menu a {
 	display: block;
 	text-decoration: none; 
-	color: #fff;
+	color: black;
 	text-align: center;
 }
 
 .side_menu th{
-    color:#dae0e6;
-    background-color:#f2f3f7;
+    color:black;
+    background-color:#bec5e1;
 }
 
 .side_menu a:hover {
-	background: #333;
+	background: #dae0e6;
 }
-
-/*----------------head_menu------------------
-.head_menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: table;
-	table-layout: fixed;
-	width: 100%; 
-}
-.head_menu ul li {
-	display: table-cell;
-    box-sizing: border-box;
-    list-style: none; 
-    height: 50px; 
-    line-height: 50px; 
-    border: 5px double  #fff;
-    position: relative;
-}
-
-.head_menu ul li a {
-	display: block;
-	text-decoration: none; 
-	color: #fff;
-	text-align: center;
-
-}
-
-.head_menu ul li a:hover {
-	background: #333;
-}
----------------------------------------------*/
-
 
 /* main_table */
 table.table a{
@@ -161,7 +151,7 @@ div.log {
     padding-left:30px;
 }
 
-  pre{
+pre{
     text-align: left;
     margin: 10px 100px;
     padding-left: 20px;
@@ -178,33 +168,7 @@ img{
     padding: 15px;
 }
 
-/* main > p */
-main > p{
-    padding: 0 65px;
-    text-align: justify;
-    font-size: 20px;
-}
 
-/* main > h2 */
-main > h2{
-    margin: 20px 70px;
-    padding: 10px;
-    border: double 10px  #60d9ee;   
-}
-
-/* main > h3 */
-main > h3 {
-    margin: 20px 70px;
-    padding: 10px;
-    border: double 5px;
-}
-
-
-/* subtitleは枠で囲まないようにする */
-h2.subtitle{
-    border: none;
-
-}
 
 /* time */
 #view_clock{
