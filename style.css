@@ -6,13 +6,22 @@
 
 /* body */
 body{
-    background-color: black;
+    background-color: #dae0e6;
     background-size: cover;
-    color:white;
+    color:black;
     font-family: 'Kikai Chokoku JIS Medium';
     
 }
 
+/* header */
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title_img{
+    text-align : left;
+}
 /* main */
 main {
     
@@ -22,10 +31,18 @@ main {
     
 }
 
+/* bread crumb */
+.breadcrumb{
+    width: 80%;  /* side_menuは20%左揃え */ 
+    text-align: left;
+}
+
+
+/* Frame */
 /* top_title */
 h1.top_title{
     font-family: 'Times New Roman', Times, serif;
-    border: double 10px #0000ff;
+    border: solid 10px #0000ff;
     margin: 30px 50px;
     padding: 10px;
     
@@ -171,7 +188,7 @@ main > p{
 main > h2{
     margin: 20px 70px;
     padding: 10px;
-    border: double 10px  #FFCCFF;   
+    border: double 10px  #60d9ee;   
 }
 
 /* main > h3 */
@@ -214,3 +231,35 @@ h2.subtitle{
 #imgcenter{
     text-align:center;
 }
+
+/* パンくずリスト */
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #52b5ee;/*色*/
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
