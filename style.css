@@ -16,16 +16,35 @@ body{
 /* header */
 header{
     margin: 0 auto;
-    text-align: center;
 }
 
 .title_img{
     text-align : left;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
+
+.title_img:hover img{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.sns_img{
+    float:right;
+    text-align: right;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.sns_img:hover img{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
 /* main */
 main {
     display: flex;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 0px;
     flex-direction: row-reverse;
 }
 
@@ -89,7 +108,7 @@ main {
     height: 100vh;
     background: #dae0e6; /* side_menuの背景色 */
     overflow-y: scroll; /* 縦方向のスクロールバーを表示 */
-    order: 1; /* 左端
+    order: 1; /* 左端*/
     scrollbar-face-color: #fff; /* IE などのスクロールバーの色設定 */
     scrollbar-track-color: #fff;
     -webkit-overflow-scrolling: touch; /* スマホ用の慣性スクロール */
@@ -126,7 +145,8 @@ table.table a:hover{
 
 /* side_menu_table */
 .side_menu table{
-    margin-top: 20px; /* side_menuの始まる位置を下げる */
+    margin-top: 5px; /* side_menuの始まる位置を下げる */
+    width: 100%;
 }
 
 .side_menu table a{
