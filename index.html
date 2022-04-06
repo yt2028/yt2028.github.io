@@ -24,12 +24,11 @@
     <main>
         <!-------------------------------article------------------------------->
         <article id="content">
-            <!---------------------------sub_title----------------------------->
-            <h2 class="subtitle" style="text-align:center">ようこそ，ゆっくりしていってね！</h2>
-            <marquee width="300" bgcolor="#ff9933" behavior="alternate" scrolldelay="10" color="black" style="text-align:center">Sorry, this site is Japanese only!</marquee>
-
+            <!--title-->
+            <header class="title"></header>
+            <!--sub_title-->
+            <h2 style="text-align:center">ようこそ，ゆっくりしていってね！</h2>
             <!------------------------------time------------------------------->
-            <br>
             <span id="view_clock"></span>
             <script type="text/javascript">
                 timerID = setInterval('clock()', 500); //0.5秒毎にclock()を実行
@@ -52,26 +51,29 @@
                 return s;
                 }
             </script>
-
+          
             <!-----------------------------log--------------------------------->
-            <h2 style="text-align:center">更新履歴</h2>
-            <div class="log">
-                サイトのレイアウトを改良しました(2022/4/6)<br/>
-                日記を更新しました(2021/8/28)<br/>
-                日記,管理人を更新しました(2021/5/2)<br />
-                日記を更新しました(2021/3/25)<br />
+            
+                <h2 style="text-align :center">更新履歴</h2>
+                <div class="log">
+                    サイトのレイアウトを改良しました(2022/4/6)<br/>
+                    日記を更新しました(2021/8/28)<br/>
+                    日記,管理人を更新しました(2021/5/2)<br />
+                    日記を更新しました(2021/3/25)<br />
 
-            </div>
-
-            <h2 style="text-align:center">サイトのデザインについて</h2>
-            <p>
-                まず始めに，このサイトをアクセスされた方はこう思ったでしょう．「いつの時代のサイトだよ」と．安心してください（?）．ばりばりの令和に制作されたサイトです．
-            </p>
-            <h2 style="text-align:center">サイトの内容</h2>
-            <p>
-                このサイトでは主に製作・制作・購入したものの紹介します．<br>
-                その他にも備忘録としてメモ代わりに利用しようと考えています．
-            </p>
+                </div>
+                <br>
+            <section class="normal-section">
+                <h2>サイトのデザインについて</h2>
+                <p>
+                     まず始めに，このサイトをアクセスされた方はこう思ったでしょう．「いつの時代のサイトだよ」と．安心してください（?）．ばりばりの令和に制作されたサイトです．
+                </p>
+                <h2>サイトの内容</h2>
+                <p>
+                    このサイトでは主に製作・制作・購入したものの紹介します．<br>
+                    その他にも備忘録としてメモ代わりに利用しようと考えています．
+                </p>
+            </section>
         </article>
         <!------------------------navigation_menu----------------------------------->
         <aside id="navi" class="side_menu"></aside>
