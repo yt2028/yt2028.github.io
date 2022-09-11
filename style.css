@@ -16,7 +16,8 @@ body{
 /* header */
 header{
     /*margin: 0 auto;*/
-    margin: 0 0 0 280px;
+    margin: 0 0 0 auto;
+    width: 80%;
 }
 
 .title_img{
