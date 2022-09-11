@@ -99,6 +99,7 @@ main {
 
 /* side_menu */
 .side_menu {
+    position : fixed;
     width: 20%;
     height: 100vh;
     background: #dae0e6; /* side_menuの背景色 */
