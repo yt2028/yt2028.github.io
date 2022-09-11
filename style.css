@@ -15,7 +15,8 @@ body{
 
 /* header */
 header{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin: 0 0 0 280px;
 }
 
 .title_img{
@@ -99,9 +100,9 @@ main {
 
 /* side_menu */
 .side_menu {
-    position : sticky; /* side menuの固定 */
-    left: 5px;/*固定したい位置*/
-    top : 10px;
+    position : fixed; /* side menuの固定 */
+    left: 0px;/*固定したい位置*/
+    top : 0px;
     width: 20%;
     height: 100%;
     background: #dae0e6; /* side_menuの背景色 */
