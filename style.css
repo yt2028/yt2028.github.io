@@ -52,8 +52,6 @@ main {
     width: 80%;  /* articleは80% */
     margin-left: 6px;
     padding-left: 3px;
-    overflow-y: scroll; /* 縦方向のスクロールバーを表示 */
-
 }
 
 /* bread crumb */
@@ -101,12 +99,12 @@ main {
 
 /* side_menu */
 .side_menu {
-    /*position : fixed; /* side menuの追従 */
+    position : fixed; /* side menuの追従 */
     left:0;/*固定したい位置*/
     width: 20%;
     /*height: 100vh;*/
     background: #dae0e6; /* side_menuの背景色 */
-    overflow-y: scroll; /* 縦方向のスクロールバーを表示 */
+    overflow-y: auto; /* 縦方向のスクロールバーを表示 */
     order: 1; /* 左端*/
     scrollbar-face-color: #fff; /* IE などのスクロールバーの色設定 */
     scrollbar-track-color: #fff;
