@@ -100,6 +100,7 @@ main {
 /* side_menu */
 .side_menu {
     position : sticky; /* side menuの追従 */
+    left:0;/*固定したい位置*/
     width: 20%;
     /*height: 100vh;*/
     background: #dae0e6; /* side_menuの背景色 */
