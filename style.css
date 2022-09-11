@@ -52,6 +52,8 @@ main {
     width: 80%;  /* articleは80% */
     margin-left: 6px;
     padding-left: 3px;
+    overflow-y: scroll; /* 縦方向のスクロールバーを表示 */
+
 }
 
 /* bread crumb */
@@ -99,7 +101,7 @@ main {
 
 /* side_menu */
 .side_menu {
-    position : sticky; /* side menuの追従 */
+    /*position : fixed; /* side menuの追従 */
     left:0;/*固定したい位置*/
     width: 20%;
     /*height: 100vh;*/
