@@ -99,7 +99,7 @@ main {
 
 /* side_menu */
 .side_menu {
-    position : fixed; /* side menuの追従 */
+    position : sticky; /* side menuの追従 */
     left:0;/*固定したい位置*/
     width: 20%;
     /*height: 100vh;*/
