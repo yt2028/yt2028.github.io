@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="index.html"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/github_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="manager.html">
+                    <span itemprop="name">管理人</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <header class="title">
+                <h1>管理人</h1>
+            </header>
+            <h2 style="text-align :center">更新日：2022年7月7日</h2>
+            <table border="1" width="700" align="center" style="font-size:25px">
+                <tr align="center">
+                    <td>現在</td>
+                    <td>社会人1年目</td>
+                </tr>
+                <tr align="center">
+                    <td>趣味</td>
+                    <td>工作，読書</td>
+                </tr>
+                <tr align="center">
+                    <td>好きなもの</td>
+                    <td>猫，ロボット，コーヒー</td>
+                </tr>
+                <tr align="center">
+                    <td>よく使うマイコン</td>
+                    <td>STM32</td>
+                </tr>
+            </table>
+            <br>
+            <section class="normal-section">
+                <h2>自己紹介</h2>
+                <p>
+                     某メーカーで産ロボに携わっています．大学院ではロボット工学を専攻していました．
+                     このサイトでは主にロボット製作の過程，必要な知識についてまとめようと思います．
+                </p>
+                <p>
+                     本はジャンル問わず年間150冊を目標に読もうとしていますが，いまだに達成されたことは
+                     ありません．好きなジャンルはSF小説です．読んだ小説，おすすめの専門書籍に
+                     ついてもまとめようと思います．
+                </p>
+            </section>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
