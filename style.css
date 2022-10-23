@@ -44,6 +44,31 @@ header{
     transition-duration: 0.3s;
 }
 
+/* picture */
+div.picture img{
+    width : 700px;
+    margin:0 auto;
+    box-shadow: 0 0 5px #333;
+}
+
+div.picture{
+    text-align: center;
+}
+
+table.picture img{
+    width : 350px;
+    box-shadow: 0 0 5px #333;
+}
+
+table.picture{
+    margin: auto;
+}
+
+/* jump_link*/
+div.jump_link{
+    font-size: x-large;
+}
+
 /* main */
 main {
     display: flex;
