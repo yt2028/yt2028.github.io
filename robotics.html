@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="https://twitter.com/tktr0208"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="https://github.com/yt2028"><img src="img/github_48px.png" alt="github" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="robotics.html">
+                    <span itemprop="name">ロボット工学</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <h1 style="text-align:center">ロボット工学</h1>
+            <!--subtitle-->
+            <h2 style="text-align:center">ロボットの手先位置姿勢の表し方</h2>
+            <p>
+                ロボットの手先位置姿勢を表すために各関節に座標系を定める．定め方にはいろいろな方法があるが，本記事では一貫してDenaviet-Hartenbergの記法（D-H法）
+                を使用する．\i\関節目のリンク座標\(\{Sigma}_i = {\boldsymbol{x_i},\boldsymbol{y_i},\boldsymbol{z_i}})\は次の手順で設定する．<br>
+                (1) リンク\i\に関節軸\i\を\(\boldsymbol{z_i})\軸とする座標系\(\{Sigma}_i)\を設定する．<br>
+                (2) \(\boldsymbol{x_i})\軸は\(\boldsymbol{z_i})\軸と\(\boldsymbol{z_{i+1}})\軸との共通垂線とし，その方向は\(\boldsymbol{z_i})\軸から\(\boldsymbol{z_{i+1})\軸へ
+                向かう方向とする．共通垂線と\(\boldsymbol{z_i})\軸との交点を\(\{Sigma}_i)\座標原点\O_i\とする．<br>
+                (3) \(\boldsymbol{y_i})\軸は右手座標系を成すように設定する．<br>
+
+
+            </p>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
