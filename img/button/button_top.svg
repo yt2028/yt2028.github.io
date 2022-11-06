@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="button.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1112"
+       inkscape:collect="always">
+      <stop
+         id="stop1108"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop1110"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1072"
+       inkscape:collect="always">
+      <stop
+         id="stop1068"
+         offset="0"
+         style="stop-color:#0000ff;stop-opacity:1;" />
+      <stop
+         id="stop1070"
+         offset="1"
+         style="stop-color:#0000b2;stop-opacity:1" />
+    </linearGradient>
+    <filter
+       height="1.0007986"
+       y="-0.00039930001"
+       width="1.0001775"
+       x="-8.8733333e-05"
+       id="filter884"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur886"
+         stdDeviation="0.0017608021"
+         inkscape:collect="always" />
+    </filter>
+    <filter
+       height="1.0000405"
+       y="-2.0250001e-05"
+       width="1.0000147"
+       x="-7.3636366e-06"
+       id="filter1056"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur1058"
+         stdDeviation="0.00017859375"
+         inkscape:collect="always" />
+    </filter>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.90906698,3.6122498e-6,0,0.36362681,2.8871508,22.946804)"
+       r="29.104929"
+       fy="46.037804"
+       fx="31.749969"
+       cy="46.037804"
+       cx="31.749969"
+       id="radialGradient1074"
+       xlink:href="#linearGradient1072"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="31.75"
+       x2="31.75"
+       y1="22.409334"
+       x1="31.75"
+       id="linearGradient1114"
+       xlink:href="#linearGradient1112"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="697"
+     inkscape:window-width="1366"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="154.35348"
+     inkscape:cx="100.15306"
+     inkscape:zoom="1.979899"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       spacingy="2.6458333"
+       spacingx="2.6458333"
+       id="grid835"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       ry="10.583333"
+       rx="10.583333"
+       y="23.8125"
+       x="2.6458333"
+       height="21.166666"
+       width="58.208332"
+       id="ButtonBase"
+       style="opacity:0.993;mix-blend-mode:normal;fill:url(#radialGradient1074);fill-opacity:1;stroke:none;stroke-width:0.499999;image-rendering:auto;filter:url(#filter1056)" />
+    <path
+       sodipodi:nodetypes="sssssss"
+       d="m 18.520833,24.28875 26.458334,0 c 5.863166,0 10.583333,0.560917 10.583333,3.4925 0,2.931584 -4.720167,2.116667 -10.583333,2.116667 H 18.520833 c -5.863166,0 -10.583333,0.814917 -10.583333,-2.116667 0,-2.931583 4.720167,-3.4925 10.583333,-3.4925 z"
+       style="opacity:1;fill:url(#linearGradient1114);fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ButtonHighlight" />
+    <text
+       id="text1098"
+       y="39.892864"
+       x="15.937047"
+       style="font-style:normal;font-weight:normal;font-size:16.9333px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         y="39.892864"
+         x="15.937047"
+         id="tspan1096"
+         sodipodi:role="line">TOP</tspan></text>
+  </g>
+</svg>
