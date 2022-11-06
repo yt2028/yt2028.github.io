@@ -33,7 +33,7 @@
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="index.html">
-                    <span itemprop="name">�z�[��</span>
+                    <span itemprop="name">ホーム</span>
                 </a>
                 <meta itemprop="position" content="1" />
                 </li>
@@ -41,42 +41,107 @@
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="robotics.html">
-                    <span itemprop="name">���{�b�g�H�w</span>
+                    <span itemprop="name">ロボット工学</span>
                 </a>
                 <meta itemprop="position" content="2" />
                 </li>
             </ol>
             <!--title-->
-            <h1 style="text-align:center">���{�b�g�H�w</h1>
+            <h1 style="text-align:center">ロボット工学</h1>
             <!--subtitle-->
-            <h2 style="text-align:center">���{�b�g�̎��ʒu�p���̕\����</h2>
+            <h2 style="text-align:center"> ロボットの手先位置及び姿勢の表し方</h2>
             <p>
-                ���{�b�g�̎��ʒu�p����\�����߂Ɋe�֐߂ɍ��W�n���߂�D��ߕ��ɂ͂��낢��ȕ��@�����邪�C�{�L���ł͈�т���Denaviet-Hartenberg�̋L�@�iD-H�@�j
-                ���g�p����D\(i\)�֐ߖڂ̃����N���W\(\Sigma_i =\){\(\boldsymbol{x}_i,\boldsymbol{y}_i,\boldsymbol{z}_i\)}�͎��̎菇�Őݒ肷��D<br>
-                (1) �����N\(i\)�Ɋ֐ߎ�\(i\)��\(\boldsymbol{z_i}\)���Ƃ�����W�n\(\Sigma_i\)��ݒ肷��D<br>
-                (2) \(\boldsymbol{x_i}\)����\(\boldsymbol{z_i}\)����\(\boldsymbol{z}_{i+1}\)���Ƃ̋��ʐ����Ƃ��C���̕�����\(\boldsymbol{z}_i\)������\(\boldsymbol{z}_{i+1}\)����
-                �����������Ƃ���D���ʐ�����\(\boldsymbol{z}_i\)���Ƃ̌�_��\(\Sigma_i\)���W���_\(O_i\)�Ƃ���D<br>
-                (3) \(\boldsymbol{y}_i\)���͉E����W�n�𐬂��悤�ɐݒ肷��D<br>
-                ���̂悤�ɂ��Ē�߂�ꂽ2�̍��W�n�̊֌W�͈ȉ���4�̃p�����[�^�ɂ���ĕ\�����Ƃ��ł���D<br>
-                \(\theta_i\)=\(\boldsymbol{z}_i\)�����ɉE�˂��̕����ɑ�����\(\boldsymbol{x}_i-1\)������\(\boldsymbol{x}_i\)���ւ̊p�x<br>
-                \(d_i\) = \(\boldsymbol{z}_i\)���̐������ɉ����đ�����\(\boldsymbol{x}_i-1\)������\(\boldsymbol{x}_i\)���ւ̋���<br>
-                \(\alpha_i\) = \(\boldsymbol{x}_i-1\)�����ɉE�˂������ɑ�����\(\boldsymbol{z}_i-1\)������\(\boldsymbol{z}_i\)���ւ̊p�x<br>
-                \(a_i\) = \(\boldsymbol{x}_i-1\)���̐������ɉ����đ�����\(\boldsymbol{z}_i-1\)������\(\boldsymbol{z}_i\)�ւ̋���<br>
-                \(\theta_i\)�̓����N�Ԋp�x�C\(d_i\)�̓����N�ԋ����C\(\alpha_i\)�̓����N�̂˂���p�x�C\(a_i\)�̓����N�����ƌĂԁD<br>
-                ���L��\(\Sigma_i-1 =\)����\(\Sigma_i =\)�ւ̕ϊ��s��\({}^i-1\boldsymbol{T}_i\)�̋��ߕ��̎菇�������D<br>
-                (1)\(\boldsymbol{x}_i-1\)���ɉ�����\(a_i\)�̕��i�D<br>
-                (2)\(\boldsymbol{z}_i-1\)����\(\boldsymbol{z}_i\)�ɏd�Ȃ�悤�ɁC\(\boldsymbol{x}_i-1\)������\(\alpha_i\)��]�D<br>
-                (3)��]���\(\boldsymbol{z}_i-1\)���ɉ�����\(d_i\)�̕��i�D<br>
-                (4)���i���\(\boldsymbol{z}_i-1\)������(\theta_i\)��]�D<br>
-                $$ {}^i-1\boldsymbol{T}_i = Trans(\a_i,0,0)Rot(\boldsymbol{x}_i-1,\alpha_i)Trans(0,0,d_i)Rot(\boldsymbol{z}_i-1,\theta_i) $$
-                $$ = \begin{bmatrix} 1 & 0 & 0 & a_i \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+                ロボットの手先位置姿勢を表すために各関節に座標系を定める．定め方にはいろいろな方法があるが，本記事では一貫してDenaviet-Hartenbergの記法（D-H法）
+                を使用する．\(i\)関節目のリンク座標\(\Sigma_i =\){\(\boldsymbol{x}_i,\boldsymbol{y}_i,\boldsymbol{z}_i\)}は次の手順で設定する．<br>
+                <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+                (1) リンク\(i\)に関節軸\(i\)を\(\boldsymbol{z_i}\)軸とする座標系\(\Sigma_i\)を設定する．<br>
+                (2) \(\boldsymbol{x_i}\)軸は\(\boldsymbol{z_i}\)軸と\(\boldsymbol{z}_{i+1}\)軸との共通垂線とし，その方向は\(\boldsymbol{z}_i\)軸から\(\boldsymbol{z}_{i+1}\)軸へ
+                向かう方向とする．共通垂線と\(\boldsymbol{z}_i\)軸との交点を\(\Sigma_i\)座標原点\(O_i\)とする．<br>
+                (3) \(\boldsymbol{y}_i\)軸は右手座標系を成すように設定する．<br>
+                </div>
+                このようにして定められた2つの座標系の関係は以下の4つのパラメータによって表すことができる．<br>
+                <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+                \(\theta_i\)は，\(\boldsymbol{z}_i\)軸回りに右ねじの方向に測った\(\boldsymbol{x}_{i-1}\)軸から\(\boldsymbol{x}_i\)軸への角度<br>
+                \(d_i\)は，\(\boldsymbol{z}_i\)軸の正方向に沿って測った\(\boldsymbol{x}_{i-1}\)軸から\(\boldsymbol{x}_i\)軸への距離<br>
+                \(\alpha_i\)は，\(\boldsymbol{x}_{i-1}\)軸回りに右ねじ方向に測った\(\boldsymbol{z}_{i-1}\)軸から\(\boldsymbol{z}_i\)軸への角度<br>
+                \(a_i\)は，\(\boldsymbol{x}_{i-1}\)軸の正方向に沿って測った\(\boldsymbol{z}_{i-1}\)軸から\(\boldsymbol{z}_i\)への距離<br>
+                </div>
+                <u>\(\theta_i\)はリンク間角度，\(d_i\)はリンク間距離，\(\alpha_i\)はリンクのねじれ角度，\(a_i\)はリンク長さと呼ぶ．</u><br>
+                下記に\(\Sigma_{i-1}\)から\(\Sigma_i\)への変換行列\({}^{i-1}\boldsymbol{T}_i\)の求め方の手順を示す．<br>
+                <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+                (1) \(\boldsymbol{x}_{i-1}\)軸に沿って\(a_i\)の並進．<br>
+                (2) \(\boldsymbol{z}_{i-1}\)軸が\(\boldsymbol{z}_i\)に重なるように，\(\boldsymbol{x}_{i-1}\)軸回りに\(\alpha_i\)回転．<br>
+                (3) 回転後の\(\boldsymbol{z}_{i-1}\)軸に沿って\(d_i\)の並進．<br>
+                (4) 並進後の\(\boldsymbol{z}_{i-1}\)軸回りに\(\theta_i\)回転．<br>
+                </div>
+                上記の手順を数式で置き換えると以下のようになる．
+                \begin{eqnarray}
+                 {}^{i-1}\boldsymbol{T}_i &=& Trans(a_i,0,0)Rot(\boldsymbol{x}_{i-1},\alpha_i)Trans(0,0,d_i)Rot(\boldsymbol{z}_{i-1},\theta_i) \\
+                 &=& \begin{bmatrix} 1 & 0 & 0 & a_i \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
                      \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & C\alpha_i & -S\alpha_i & 0 \\ 0 & -S\alpha_i & C\alpha_i & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} 
                      \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}
-                     \begin{bmatrix} C\theta_i & -S\theta_i & 0 & 0 \\ S\theta_i & C\theta_i & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
-                   = \begin{bmatrix} C\theta_i & -S\theta_i & 0 & a_i \\ C\alpha_iS\theta_i & C\alpha_iC\theta_i & -S\alpha_i & -d_iS\alpha_i 
-                                  \\ S\alpha_iS\theta_i & S\alpha_iC\theta_i & C\alpha_i & d_iC\alpha_i \\ 0 & 0 & 0 & 1 \end{bmatrix} $$
-
-                
+                     \begin{bmatrix} C\theta_i & -S\theta_i & 0 & 0 \\ S\theta_i & C\theta_i & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} \\
+                 &=& \begin{bmatrix} C\theta_i & -S\theta_i & 0 & a_i \\ C\alpha_iS\theta_i & C\alpha_iC\theta_i & -S\alpha_i & -d_iS\alpha_i 
+                                  \\ S\alpha_iS\theta_i & S\alpha_iC\theta_i & C\alpha_i & d_iC\alpha_i \\ 0 & 0 & 0 & 1 \end{bmatrix} 
+                \end{eqnarray}
+                なお，\(C\alpha_i\)は，\(\cos{\alpha_i}\)，\(S\alpha_i\)は，\(\sin{\alpha_i}\)を表す（\(\theta_i\)についても同様）．<br>
+                この変換行列\({}^{i-1}\boldsymbol{T}_i\)を<u>同次変換行列</u>と呼び，4×4行列の内，姿勢は，1×1成分から3×3成分に，位置は，1×4成分から3×1成分に現れる便利な行列である．
+                6軸ロボットの場合，基準座標系を\(\Sigma_0\)とし，6軸目の座標系を\(\Sigma_6\)とすると，\(\Sigma_0\)から見た，\(\Sigma_6\)の姿勢及び位置を表す，
+                同一次変換行列は下記のように表すことができる．
+                $$ {}^{0}\boldsymbol{T}_6 = {}^{0}\boldsymbol{T}_1{}^{1}\boldsymbol{T}_2{}^{2}\boldsymbol{T}_3{}^{3}\boldsymbol{T}_4
+                   {}^{4}\boldsymbol{T}_5{}^{5}\boldsymbol{T}_6
+                $$
+                上記のように0から6まで順に掛け合わせることにより求めることができる．
+            </p>
+            <h2 style="text-align:center">順運動学・逆運動学</h2>
+            <p>
+                順運動学は各関節の角度から，手先の位置及び姿勢を求めるのに対して，逆運動学はその逆で，手先の位置及び姿勢から，各関節の角度を求める．順運動学は，上述した通り逆運動学と比較して容易に
+                解くことができる．一方で，逆運動学は順運動学と比較して容易に解くことができない．なぜならば，三角関数の非線形関数が式に含まれるためである．逆運動学の解法は，解析解法と数値解法の2種類がある．解析解が求まるロボットは逆運動学が容易に解けるようにあらかじめ
+                関節の向きを工夫して設計している．現存する産業用ロボットが似たような構造をしてるのはこのためである．一方で，数値解を求める場合は，手先の微小変位と関節の微小変位の関係を利用し，近似的に解を求める．当然ながら，数値解法は解析解放よりも計算回数は多くなる．<br>
+                ここでは，解析解法は文献を参照してもらうこととして，数値解法について記述する．
+            </p>
+            <h3>数値解法</h3>
+            <p>
+                例として6関節ロボット(6-DOF)について数値解法を考える．関節の値を\(q_1 ~ q_6\)，手先の位置及び姿勢を\(x,y,z,\psi,\theta,\phi\)とする．<br>
+                列ベクトル表記でまとめると次のようになる．
+                \begin{eqnarray}
+                    \boldsymbol{q} &=& [q_1,q_2,q_3,q_4,q_5,q_6]^{\mathrm{T}} \\
+                    \boldsymbol{x} &=& [x,y,z,\psi,\theta,\phi]^{\mathrm{T}} 
+                \end{eqnarray}
+                運動学の計算結果により\(\boldsymbol{x}\)が関数\(\boldsymbol{f}(\boldsymbol{q})\)で求まるものとした場合，
+                \(\boldsymbol{q}\)が微小量\(\Delta\boldsymbol{q}\)変化した場合，\(\boldsymbol{x}\)の微小量\(\Delta\boldsymbol{x}\)は次式で求まる．
+                $$
+                    \left[ \begin{array}{c} \Delta x \\ \Delta y \\ \Delta z \\ \Delta \psi \\ \Delta \theta \\ \Delta \phi \end{array} \right]
+                    = \begin{bmatrix} 
+                    \frac{\partial f_x}{\partial q_1} & \frac{\partial f_x}{\partial q_2} & \frac{\partial f_x}{\partial q_3} & \frac{\partial f_x}{\partial q_4} & \frac{\partial f_x}{\partial q_5} & \frac{\partial f_x}{\partial q_6} \\
+                    \frac{\partial f_y}{\partial q_1} & \frac{\partial f_y}{\partial q_2} & \frac{\partial f_y}{\partial q_3} & \frac{\partial f_y}{\partial q_4} & \frac{\partial f_y}{\partial q_5} & \frac{\partial f_y}{\partial q_6} \\
+                    \frac{\partial f_z}{\partial q_1} & \frac{\partial f_z}{\partial q_2} & \frac{\partial f_z}{\partial q_3} & \frac{\partial f_z}{\partial q_4} & \frac{\partial f_z}{\partial q_5} & \frac{\partial f_z}{\partial q_6} \\
+                    \frac{\partial f_\psi}{\partial q_1} & \frac{\partial f_\psi}{\partial q_2} & \frac{\partial f_\psi}{\partial q_3} & \frac{\partial f_\psi}{\partial q_4} & \frac{\partial f_\psi}{\partial q_5} & \frac{\partial f_\psi}{\partial q_6} \\
+                    \frac{\partial f_\theta}{\partial q_1} & \frac{\partial f_\theta}{\partial q_2} & \frac{\partial f_\theta}{\partial q_3} & \frac{\partial f_\theta}{\partial q_4} & \frac{\partial f_\theta}{\partial q_5} & \frac{\partial f_\theta}{\partial q_6} \\
+                    \frac{\partial f_\phi}{\partial q_1} & \frac{\partial f_\phi}{\partial q_2} & \frac{\partial f_\phi}{\partial q_3} & \frac{\partial f_\phi}{\partial q_4} & \frac{\partial f_\phi}{\partial q_5} & \frac{\partial f_\phi}{\partial q_6} \\
+                    \end{bmatrix}
+                    \left[ \begin{array}{c} \Delta q_1 \\ \Delta q_2 \\ \Delta q_3 \\ \Delta q_4 \\ \Delta q_5 \\ \Delta q_6 \end{array} \right]
+                $$
+                上式を，
+                $$
+                    \Delta \boldsymbol{x} = \boldsymbol{J} \Delta \boldsymbol{q}
+                $$
+                と表記する．\(\boldsymbol{J}\)は<u>ヤコビ行列（Jacobian-Matrix）</u>と呼ばれ，論文などを読んでいると度々お目にかかる重要な行列である．
+                \(\boldsymbol{J}\)が正則であるとき，すなわち逆行列\(\boldsymbol{J}^{-1}\)が存在するとき，手先の目標変位量\(\Delta\boldsymbol{x}_d\)が与えられた場合に，各関節の変位量\(\Delta\boldsymbol{q}_d\)
+                は次式で求めることができる．
+                $$
+                    \Delta \boldsymbol{q}_{d} = \boldsymbol{J}^{-1}\Delta \boldsymbol{x}_d
+                $$
+                上式の両辺を微小時間\(\Delta t\)で割り，
+                \(\Delta t → 0\)とすることで，次式のように微分の形で表すことができる．
+                $$
+                    \dot{\boldsymbol{x}} = \boldsymbol{J} \dot{\boldsymbol{q}}
+                $$
+                目標速度\(\dot{\boldsymbol{x_d}}\)が与えられた場合，各関節の速度\(\dot{\boldsymbol{q_d}}\)は，同様に\(\boldsymbol{J}^{-1}\)を用いて，
+                $$
+                    \dot{\boldsymbol{q_d}} = \boldsymbol{J}^{-1} \dot{\boldsymbol{x_d}}
+                $$
+                として求めることができる．
             </p>
         </article>
         <!------------------------navigation_menu----------------------------------->
