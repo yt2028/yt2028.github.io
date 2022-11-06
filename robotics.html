@@ -4,7 +4,9 @@
     <title>Robotics</title>
     <link rel="stylesheet" href="style.css"  type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <!--<script type="text/javascript" id="MathJax-script" async src="..\MathJax\MathJax.js"></script>-->
     <script>
         $(function() {
         $("#navi").load("navi.html");
@@ -31,7 +33,7 @@
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="index.html">
-                    <span itemprop="name">ãƒ›ãƒ¼ãƒ </span>
+                    <span itemprop="name">ƒz[ƒ€</span>
                 </a>
                 <meta itemprop="position" content="1" />
                 </li>
@@ -39,24 +41,42 @@
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="robotics.html">
-                    <span itemprop="name">ãƒ­ãƒœãƒƒãƒˆå·¥å­¦</span>
+                    <span itemprop="name">ƒƒ{ƒbƒgHŠw</span>
                 </a>
                 <meta itemprop="position" content="2" />
                 </li>
             </ol>
             <!--title-->
-            <h1 style="text-align:center">ãƒ­ãƒœãƒƒãƒˆå·¥å­¦</h1>
+            <h1 style="text-align:center">ƒƒ{ƒbƒgHŠw</h1>
             <!--subtitle-->
-            <h2 style="text-align:center">ãƒ­ãƒœãƒƒãƒˆã®æ‰‹å…ˆä½ç½®å§¿å‹¢ã®è¡¨ã—æ–¹</h2>
+            <h2 style="text-align:center">ƒƒ{ƒbƒg‚ÌèæˆÊ’up¨‚Ì•\‚µ•û</h2>
             <p>
-                ãƒ­ãƒœãƒƒãƒˆã®æ‰‹å…ˆä½ç½®å§¿å‹¢ã‚’è¡¨ã™ãŸã‚ã«å„é–¢ç¯€ã«åº§æ¨™ç³»ã‚’å®šã‚ã‚‹ï¼å®šã‚æ–¹ã«ã¯ã„ã‚ã„ã‚ãªæ–¹æ³•ãŒã‚ã‚‹ãŒï¼Œæœ¬è¨˜äº‹ã§ã¯ä¸€è²«ã—ã¦Denaviet-Hartenbergã®è¨˜æ³•ï¼ˆD-Hæ³•ï¼‰
-                ã‚’ä½¿ç”¨ã™ã‚‹ï¼\(i\)é–¢ç¯€ç›®ã®ãƒªãƒ³ã‚¯åº§æ¨™\(\Sigma_i =\){\(\boldsymbol{x}_i,\boldsymbol{y}_i,\boldsymbol{z}_i\)}ã¯æ¬¡ã®æ‰‹é †ã§è¨­å®šã™ã‚‹ï¼<br>
-                (1) ãƒªãƒ³ã‚¯\(i\)ã«é–¢ç¯€è»¸\(i\)ã‚’\(\boldsymbol{z_i}\)è»¸ã¨ã™ã‚‹åº§æ¨™ç³»\(\Sigma_i\)ã‚’è¨­å®šã™ã‚‹ï¼<br>
-                (2) \(\boldsymbol{x_i}\)è»¸ã¯\(\boldsymbol{z_i}\)è»¸ã¨\(\boldsymbol{z}_{i+1}\)è»¸ã¨ã®å…±é€šå‚ç·šã¨ã—ï¼Œãã®æ–¹å‘ã¯\(\boldsymbol{z}_i\)è»¸ã‹ã‚‰\(\boldsymbol{z}_{i+1}\)è»¸ã¸
-                å‘ã‹ã†æ–¹å‘ã¨ã™ã‚‹ï¼å…±é€šå‚ç·šã¨\(\boldsymbol{z}_i\)è»¸ã¨ã®äº¤ç‚¹ã‚’\(\Sigma_i\)åº§æ¨™åŸç‚¹\(O_i\)ã¨ã™ã‚‹ï¼<br>
-                (3) \(\boldsymbol{y}_i\)è»¸ã¯å³æ‰‹åº§æ¨™ç³»ã‚’æˆã™ã‚ˆã†ã«è¨­å®šã™ã‚‹ï¼<br>
+                ƒƒ{ƒbƒg‚ÌèæˆÊ’up¨‚ğ•\‚·‚½‚ß‚ÉŠeŠÖß‚ÉÀ•WŒn‚ğ’è‚ß‚éD’è‚ß•û‚É‚Í‚¢‚ë‚¢‚ë‚È•û–@‚ª‚ ‚é‚ªC–{‹L–‚Å‚ÍˆêŠÑ‚µ‚ÄDenaviet-Hartenberg‚Ì‹L–@iD-H–@j
+                ‚ğg—p‚·‚éD\(i\)ŠÖß–Ú‚ÌƒŠƒ“ƒNÀ•W\(\Sigma_i =\){\(\boldsymbol{x}_i,\boldsymbol{y}_i,\boldsymbol{z}_i\)}‚ÍŸ‚Ìè‡‚Åİ’è‚·‚éD<br>
+                (1) ƒŠƒ“ƒN\(i\)‚ÉŠÖß²\(i\)‚ğ\(\boldsymbol{z_i}\)²‚Æ‚·‚éÀ•WŒn\(\Sigma_i\)‚ğİ’è‚·‚éD<br>
+                (2) \(\boldsymbol{x_i}\)²‚Í\(\boldsymbol{z_i}\)²‚Æ\(\boldsymbol{z}_{i+1}\)²‚Æ‚Ì‹¤’Ê‚ü‚Æ‚µC‚»‚Ì•ûŒü‚Í\(\boldsymbol{z}_i\)²‚©‚ç\(\boldsymbol{z}_{i+1}\)²‚Ö
+                Œü‚©‚¤•ûŒü‚Æ‚·‚éD‹¤’Ê‚ü‚Æ\(\boldsymbol{z}_i\)²‚Æ‚ÌŒğ“_‚ğ\(\Sigma_i\)À•WŒ´“_\(O_i\)‚Æ‚·‚éD<br>
+                (3) \(\boldsymbol{y}_i\)²‚Í‰EèÀ•WŒn‚ğ¬‚·‚æ‚¤‚Éİ’è‚·‚éD<br>
+                ‚±‚Ì‚æ‚¤‚É‚µ‚Ä’è‚ß‚ç‚ê‚½2‚Â‚ÌÀ•WŒn‚ÌŠÖŒW‚ÍˆÈ‰º‚Ì4‚Â‚Ìƒpƒ‰ƒ[ƒ^‚É‚æ‚Á‚Ä•\‚·‚±‚Æ‚ª‚Å‚«‚éD<br>
+                \(\theta_i\)=\(\boldsymbol{z}_i\)²‰ñ‚è‚É‰E‚Ë‚¶‚Ì•ûŒü‚É‘ª‚Á‚½\(\boldsymbol{x}_i-1\)²‚©‚ç\(\boldsymbol{x}_i\)²‚Ö‚ÌŠp“x<br>
+                \(d_i\) = \(\boldsymbol{z}_i\)²‚Ì³•ûŒü‚É‰ˆ‚Á‚Ä‘ª‚Á‚½\(\boldsymbol{x}_i-1\)²‚©‚ç\(\boldsymbol{x}_i\)²‚Ö‚Ì‹——£<br>
+                \(\alpha_i\) = \(\boldsymbol{x}_i-1\)²‰ñ‚è‚É‰E‚Ë‚¶•ûŒü‚É‘ª‚Á‚½\(\boldsymbol{z}_i-1\)²‚©‚ç\(\boldsymbol{z}_i\)²‚Ö‚ÌŠp“x<br>
+                \(a_i\) = \(\boldsymbol{x}_i-1\)²‚Ì³•ûŒü‚É‰ˆ‚Á‚Ä‘ª‚Á‚½\(\boldsymbol{z}_i-1\)²‚©‚ç\(\boldsymbol{z}_i\)‚Ö‚Ì‹——£<br>
+                \(\theta_i\)‚ÍƒŠƒ“ƒNŠÔŠp“xC\(d_i\)‚ÍƒŠƒ“ƒNŠÔ‹——£C\(\alpha_i\)‚ÍƒŠƒ“ƒN‚Ì‚Ë‚¶‚êŠp“xC\(a_i\)‚ÍƒŠƒ“ƒN’·‚³‚ÆŒÄ‚ÔD<br>
+                ‰º‹L‚É\(\Sigma_i-1 =\)‚©‚ç\(\Sigma_i =\)‚Ö‚Ì•ÏŠ·s—ñ\({}^i-1\boldsymbol{T}_i\)‚Ì‹‚ß•û‚Ìè‡‚ğ¦‚·D<br>
+                (1)\(\boldsymbol{x}_i-1\)²‚É‰ˆ‚Á‚Ä\(a_i\)‚Ì•ÀiD<br>
+                (2)\(\boldsymbol{z}_i-1\)²‚ª\(\boldsymbol{z}_i\)‚Éd‚È‚é‚æ‚¤‚ÉC\(\boldsymbol{x}_i-1\)²‰ñ‚è‚É\(\alpha_i\)‰ñ“]D<br>
+                (3)‰ñ“]Œã‚Ì\(\boldsymbol{z}_i-1\)²‚É‰ˆ‚Á‚Ä\(d_i\)‚Ì•ÀiD<br>
+                (4)•ÀiŒã‚Ì\(\boldsymbol{z}_i-1\)²‰ñ‚è‚É(\theta_i\)‰ñ“]D<br>
+                $$ {}^i-1\boldsymbol{T}_i = Trans(\a_i,0,0)Rot(\boldsymbol{x}_i-1,\alpha_i)Trans(0,0,d_i)Rot(\boldsymbol{z}_i-1,\theta_i) $$
+                $$ = \begin{bmatrix} 1 & 0 & 0 & a_i \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+                     \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & C\alpha_i & -S\alpha_i & 0 \\ 0 & -S\alpha_i & C\alpha_i & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} 
+                     \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}
+                     \begin{bmatrix} C\theta_i & -S\theta_i & 0 & 0 \\ S\theta_i & C\theta_i & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+                   = \begin{bmatrix} C\theta_i & -S\theta_i & 0 & a_i \\ C\alpha_iS\theta_i & C\alpha_iC\theta_i & -S\alpha_i & -d_iS\alpha_i 
+                                  \\ S\alpha_iS\theta_i & S\alpha_iC\theta_i & C\alpha_i & d_iC\alpha_i \\ 0 & 0 & 0 & 1 \end{bmatrix} $$
 
-
+                
             </p>
         </article>
         <!------------------------navigation_menu----------------------------------->
