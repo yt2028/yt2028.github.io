@@ -88,6 +88,11 @@ main {
     text-align: left;
 }
 
+/* reference */
+ol.ref {
+    list-style-type: none;
+  }
+
 /* article */
 /* .title {
     margin: 0 0 36px 5px;
@@ -293,4 +298,8 @@ text-decoration: underline;
 p{
     margin: 16px 8px;
     text-indent: 1em;
+}
+
+a {
+    text-decoration:none; 
 }
