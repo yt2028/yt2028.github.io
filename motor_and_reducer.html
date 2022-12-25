@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>motor_and_reducer</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="https://twitter.com/tktr0208"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="https://github.com/yt2028"><img src="img/github_48px.png" alt="github" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="book.html">
+                    <span itemprop="name">2</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <h1 style="text-align:center">モータと減速機の選定方法</h1>
+            <!--subtitle-->
+            <h2 style="text-align:center">モータ・減速機の選定手順</h2>
+            モータと減速機の選定手順を記します．以下の順番で選定を行います．<br>
+            (1) モータの仮選定．<br>
+            (2) 減速機の仮選定．<br>
+            (3) (1)(2)で仮選定したモータ及び減速機を用いて，出力を再計算．<br>
+            (4) (3)で求めた出力(モータの発生トルク)が選定したモータの使用可能領域内に入っているかを確認．<br>
+            (5) (4)で使用可能領域に入っていれば，選定終了．入っていなければ，(2)より，減速機の選定のやり直し．以下繰り返す．<br>
+            フローチャート図にまとめると次のようになります．<br><br><br>
+            <div style = "text-align: center;">
+                <img src="./img/craft/motor_and_gear/flow_chart_motor_and_reducer.png" width="500px">
+            </div>
+
+            <h2 style="text-align:center">モータの仮選定</h2>
+            <img src="./img/craft/motor_and_gear/motor_and_gear_2.png" width="500px" align ="right">
+            <p>
+                まず始めにモータに必要な出力を求めます．
+                右図に示すように減速機を介してモータで負荷を駆動する場合を考えます．
+                モータのロータ回転速度\(\omega_m\) [rad/s]，モータの発生トルク\(T_m\) [Nm]，モータのロータイナーシャ\(J_m\) [kgm<sup>2</sup>]，
+                負荷のの回転速度\(\omega_L\) [rad/s]，負荷トルク\(T_L\) [Nm]，負荷イナーシャ\(J_m\) [kgm<sup>2</sup>]，
+                減速機の減速比\(n\) [-]，効率\(\eta\) [-]とします．※ 減速機のイナーシャは無視しています．</div><br>
+                モータのロータ回転速度と負荷の回転速度の関係は以下のようになります．
+                $$ \omega_m = n\omega_L \tag{1}$$
+                また，モータに作用する負荷からのトルクを\(T_{L,m}\)[Nm]，負荷に作用するモータからのトルク\(T_{m,L}\)[Nm]とすると，モータと負荷の回転の運動方程式は
+                以下のようになります．
+                \begin{align}
+                    J_m\dot{\omega}_m &= T_m - T_{L,m} \tag{2}\\
+                    J_L\dot{\omega}_L &= T_{m,L} - T_L \tag{3}
+                \end{align}
+                \(T_{L,m}\)，\(T_{m,L}\)の関係は，減速機の効率を考慮すると以下のようになります．
+                $$ T_{m,L} =  \eta nT_{L,m}  \tag{4}$$
+                (2)(3)(4)式より\(T_m\) を求めると，以下のようになります．料理番組みたいですね．
+                $$ T_{m} =  \frac{T_L + (J_L + \eta n^2 J_m)\dot{\omega}_L}{\eta n} \tag{5} $$
+                モータに必要な出力\(P_m\) [W]は\(T_m\) と\(\omega_m\) の積で求まり，上式の\(T_m\) を代入すると，
+                $$ P_m = T_m \omega_m = \frac{T_L + (J_L + \eta n^2 J_m)\dot{\omega}_L}{\eta n} \omega_L \tag{6} $$
+                となります．<br>
+                負荷（モータ）の回転速度は，一定ではなく，時間によって変化させるように制御するものとします．
+                すると，\(P_m\) も時間によって変化します．
+                変化する\(P_m\) の最大値\(P_\rm{max}\) よりも大きい定格出力を有するモータを選定する必要があるのですが，
+                この段階では減速機の選定を行っていないため，減速比\(n\)，効率\(\eta\) は分かりません．よって，\(P_\rm{max}\) は定めようがないです．
+                そこで，仮の値（例えば，\(n = 1\)，\(\eta = 0.8\)）をそれぞれ代入し，\(P_\rm{max}\) を求め，モータを選定（仮）します．
+                また，\(J_m = 0\) としてモータのロータイナーシャを無視する方法もあります．<br>
+                
+                <h2 style="text-align:center">減速機の仮選定</h2>
+                減速機の選定は，まずは前項で選定したモータを使用した場合，負荷の駆動に必要な減速比\(n\) の条件を求めます．そして，その条件を満たす，
+                減速比を有していることと，減速機カタログ値の定格トルクが，最大負荷トルクより大きいもの，連続運転可能な回転速度が，負荷の最大回転速度よりも大きいものを選定することになります．
+                前項の最後で述べた，\(J_m\) を無視する方法で，モータが発生するべきトルクの最大値を(3)式を用いて求めると，以下のようになります.
+                $$ \frac{T_{L,\rm{max}}}{\eta n} =  \frac{\rm{max}(T_L + J_L\dot\omega_L)}{\eta n} \tag{7} $$
+                減速比\(n\) を決めるためには，以下の2つの条件を満たす必要があります．<br><br>
+                (1) 上式により求まる値は，選定したモータの最大出力トルク\(T_{\rm{max}}\) より小さい必要があります．<br>
+                (2) 2つめの条件は，負荷の最大回転速度\(\omega_{L,\rm{max}}\) は，選定したモータのロータ最大回転速度\(\omega_{\rm{max}}\) より小さい必要があります．<br><br>
+                以上の2つの条件を以下のようにまとめます．
+                \begin{align}
+                    \frac{T_{L,\rm{max}}}{\eta n} &< T_{\rm{max}}      \tag{8} \\
+                    n\omega_{L,\rm{max}}         &< \omega_{\rm{max}} \tag{9}  \\
+                \end{align}
+                $$ \frac{T_{L,\rm{max}}}{\eta T_{\rm{max}}} < n < \frac{\omega_{\rm{max}}}{\omega_{L,\rm{max}}} \tag{10}  $$
+                (10)式を満たすような減速比\(n\) を有し， 冒頭で述べた通り，その減速機カタログ記載の定格トルク，連続運転可能な回転速度が，
+                負荷の最大負荷トルク，最大回転速度よりも大きい減速機を選定します．ここで，その減速機の効率\(\eta\) も調べておきます．
+
+                <h2 style="text-align:center">出力の再計算</h2>
+                以上により仮選定したモータ，減速機で明確になった値，\(J_m\)，\(n\)，\(\eta\) を用いて，再度(6)式の出力\(P_m\) または(5)式の
+                モータの発生トルク\(T_{m}\) を計算します．
+                その値が使用回転速度の範囲でカタログ記載の使用可能領域に入っていれば，選定終了となります．下図のようにメーカのカタログには使用可能領域が，\(T - \omega\) 曲線で
+                記載されていることが多いです(使用可能領域は赤色の領域です)．
+                もし，使用可能領域から外れていたら，再度減速機の選定からやり直します．※ 状況に合わせて，モータの再選定を行います．
+                <div  style ="text-align :center">
+                    <img src="./img/craft/motor_and_gear/maxon_200wdc.png" width="800px">
+                </div>
+                <div style ="text-align :center">
+                モータの運転範囲( maxon社 RE 50 Ø50 mm, グラファイトブラシ, 200 W のカタログより抜粋)
+                </div>
+            </p>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
