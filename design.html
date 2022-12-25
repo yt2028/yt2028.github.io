@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="https://twitter.com/tktr0208"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="https://github.com/yt2028"><img src="img/github_48px.png" alt="github" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="design.html">
+                    <span itemprop="name">機械設計学</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <h1 style="text-align:center">機械設計学</h1>
+            <!--subtitle-->
+            <h2 style="text-align:center">モータ・減速機の選定法</h2>
+            <a href="https://github.com/yt2028/motor_and_reducer.html">モータと減速機の選定方法</a>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
