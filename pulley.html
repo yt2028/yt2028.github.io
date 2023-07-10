@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanics_Pulley</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="https://twitter.com/tktr0208"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="https://github.com/yt2028"><img src="img/github_48px.png" alt="github" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="mechanics.html">
+                    <span itemprop="name">プーリ</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <h1 style="text-align:center">プーリを取りつけた軸に作用する力</h1>
+            <!--subtitle-->
+            <h2 style="text-align:center">力学関係</h2>
+            <p>
+                図1にモータなどによって動力が伝達されたプーリおよびベルト・プーリ軸の力学関係を示す．
+                プーリにかかるベルトには引っ張り側の張力Ttと弛み側の張力Tsが作用し，プーリにはその力の差によってねじりトルクτが作用する．
+                そして，プーリの軸にはプーリを介して荷重Pが作用することになる．
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley.png" width="300px">
+                </div>
+                <div style = "text-align: center;">
+                    図1 プーリ，ベルト，プーリ軸の力学関係
+                </div>
+                <br>
+                図1中の文字を用いて力学関係を式で表すと以下のようになる．dpはプーリのピッチ円直径を表す．
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley_eq.png" width="200px">
+                </div>
+                3つ目の式のTeは，引っ張り側の張力Ttと弛み側の張力Tsとの差であり「有効張力」と呼ばれる．以下にこの有効張力Teの導出過程を示す．<br>
+                ベルトの微小部分の力学関係を図2のようになる．ベルトについて，プーリの半径方向には，遠心力Cとプーリからの反力Fが作用する．また，
+                プーリの円周方向には，ベルトの張力とプーリとの摩擦力が作用する．反力，摩擦力を図3に示す．
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley_kinematics_model.png" width="300px">
+                </div>
+                <div style = "text-align: center;">
+                    図2 ベルトの微小部分の力学関係
+                </div>
+                <br>
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley_belt_kinematics_model.png" width="300px">
+                </div>
+                <div style = "text-align: center;">
+                    図3 ベルトに作用する反力(左)・摩擦力(右)
+                </div>
+                <br>
+                図2,3中の，文字を用いて力学関係を式で表すと以下のようになる．プーリの巻き掛け角θは，180°とは限らないことに注意．
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley_kinematics_eq.png" width="400px">
+                </div>
+                以上の式を用いて有効張力Teを求めると以下のようになる．
+                <div style = "text-align: center;">
+                    <img src="./img/mech/pulley/pulley_kinematics_eq2.png" width="400px">
+                </div>
+            </p>
+            <h2 style="text-align:center">工事中</h2>
+            <p>
+
+
+
+
+            </p>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
