@@ -1,7 +1,8 @@
 /* font */
 @font-face {
-	font-family:'Kikai Chokoku JIS Medium';
-	src: url(./KikaiChokokuJIS-Md.otf);
+	/*font-family:'Kikai Chokoku JIS Medium';
+	src: url(./KikaiChokokuJIS-Md.otf);*/
+	font-family:'メイリオ', 'Meiryo', sans-serif;
 }
 
 /* body */
