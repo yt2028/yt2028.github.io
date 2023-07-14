@@ -10,7 +10,8 @@ body{
     background-color: #dae0e6;
     background-size: cover;
     color:black;
-    font-family: 'Kikai Chokoku JIS Medium';
+    /*font-family: 'Kikai Chokoku JIS Medium';*/
+    font-family:'メイリオ', 'Meiryo', sans-serif;
     margin: 0px 20px 0px 20px;
     
 }
