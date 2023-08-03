@@ -1,19 +1,17 @@
 /* font */
 @font-face {
-	/*font-family:'Kikai Chokoku JIS Medium';
-	src: url(./KikaiChokokuJIS-Md.otf);*/
-	font-family:'メイリオ', 'Meiryo', sans-serif;
+	font-family:'Kikai Chokoku JIS Medium';
+	src: url(./KikaiChokokuJIS-Md.otf);
 }
 
 /* body */
-body{
+body {
     background-color: #dae0e6;
     background-size: cover;
-    color:black;
-    /*font-family: 'Kikai Chokoku JIS Medium';*/
-    font-family:'メイリオ', 'Meiryo', sans-serif;
+    color: black;
+    /* font-family: 'Kikai Chokoku JIS Medium';*/
+    font-family: 'メイリオ', 'Meiryo', sans-serif;
     margin: 0px 20px 0px 20px;
-    
 }
 
 /* header */
@@ -312,7 +310,7 @@ text-decoration: underline;
 
 p{
     margin: 16px 8px;
-    text-indent: 1em;
+    /*text-indent: 1em;*/
 }
 
 a {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>English</title>
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        $(function() {
+        $("#navi").load("navi.html");
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------header----------------------------------->
+    <header>
+        <!--Name-->
+
+        <a class = "title_img" href="index.html"><img src="img/title.png" alt="title" height="50"></a>
+        <a class = "sns_img" href="https://twitter.com/tktr0208"><img src="img/twitter_48px.png" alt="twitter" height = "48"></a>
+        <a class = "sns_img" href="https://github.com/yt2028"><img src="img/github_48px.png" alt="github" height = "48"></a>
+        <a class = "sns_img" href="index.html"><img src="img/youtube_48px.png" alt="twitter" height = "48"></a>
+        <hr> 
+    
+    </header>
+    <main>
+        <!-------------------------------article------------------------------->
+        <article id="content">
+            <!----------------------------breadcrumb------------------------------------->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+                </li>
+            
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="mechanics.html">
+                    <span itemprop="name">英語</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <!--title-->
+            <h1 style="text-align:center">英語</h1>
+            <!--subtitle-->
+            <h2 style="text-align:center">英文法</h2>
+                <p>
+                    本記事は私が苦戦した英文法について説明します．
+                    苦戦したとはいっても，全て高校生時代に習う基本的な内容ばかりです．おそらく当時はあまり深く考えずに記憶だけしていたのでしょう．
+                    今回ここに書くのはなぜそうなるのか理由を明らかにした内容です．<br>
+                    本記事を書くにあたりお世話になった参考書を3冊紹介します．以下の3冊です．
+                    <ul>
+                        <li>ビジュアル英文解釈 PARTⅠ(伊藤和夫 著)</li>
+                        <li>ビジュアル英文解釈 PARTⅡ(伊藤和夫 著)</li>
+                        <li>英文法の鬼100則(時吉秀弥 著)</li>
+                    </ul>
+                </p>
+            <h3 style="text-align:center">関係代名詞の制限用法，非制限用法</h3>
+                <p>
+                    次の2つの英文を読んでどのような状況を想像しますか？<br>
+                    My mother who lives in Tokyo is 60 years old. (制限用法)<br>
+                    My mother ,who lives in Tokyo, is 60 years old. (非制限用法)<br>
+                    1文目は関係代名詞の制限用法を用いた文で，2文目は関係代名詞の非制限用法を用いた文です．<br>
+                    ここで大切なのは制限用法（非制限用法）の意味です．
+                    <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;display:inline-block;">
+                        制限用法というのは，複数あるモノ（名詞）を修飾し情報を制限することです．
+                    </div> 
+                    <br>
+                    つまり，1文目の英文は2人以上の母親がいて，その中の東京に住んでいる母親という解釈になります．<br>
+                    一方で，2文目の英文はカンマ(,)の間のwho lives in TokyoはMy motherの補足情報で制限する働きはありません.従って，
+                    母親は1人のみでただ単にその人がどういう人なのかを説明している文になります．<br>
+                    日本語訳は次のとおりです．<br>
+                    (2人以上母親がいてその内の)東京に住んでいる母親は60歳である． (制限用法)<br>
+                    私の母親は東京に住んでいて60歳である. (非制限用法)<br>
+                </p>
+        </article>
+        <!------------------------navigation_menu----------------------------------->
+        <aside id="navi" class="side_menu"></aside>
+    </main>
+    
+</body>
+</html>
