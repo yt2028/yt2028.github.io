@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="溶接残留応力.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="221.60444"
+     inkscape:cy="595.77767"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect10"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7-9"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7-4"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7-9-3"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9-0"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7-2"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7-9-5"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9-3"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9-0-8"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <marker
+       style="overflow:visible"
+       id="ArrowWide-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1-3" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#bbbbbb;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1;fill-opacity:1"
+       id="rect1"
+       width="45.000004"
+       height="9.999999"
+       x="35"
+       y="79.999992" />
+    <rect
+       style="fill:#bbbbbb;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="rect2"
+       width="45.000004"
+       height="9.999999"
+       x="80"
+       y="79.999992"
+       ry="5.3688332e-06" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path2"
+       cx="80"
+       cy="80"
+       rx="5"
+       ry="2.4999998" />
+    <ellipse
+       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3"
+       cx="80"
+       cy="100"
+       rx="5"
+       ry="4.9999995" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 80,105 v 14.99999"
+       id="path4" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 75,124.99999 5,-5 L 85.000002,125"
+       id="path5" />
+    <circle
+       id="path6"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="79.94873"
+       cy="110.10709"
+       r="0.016255468" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 80,108.99999 c -3.666669,1 -7.333334,2 -10.666696,2.16666 -3.333362,0.16666 -6.333305,-0.49999 -9.333303,-1.16665"
+       id="path7"
+       inkscape:path-effect="#path-effect7"
+       inkscape:original-d="M 80,108.99999 C 76.333333,110 72.666669,111 69.000001,111.99999 65.999941,111.33332 63,110.66666 60.000001,110" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 80,108.99999 c -3.666669,1 -7.333334,2 -10.666696,2.16666 -3.333362,0.16666 -6.333305,-0.49999 -9.333303,-1.16665"
+       id="path7-9"
+       inkscape:path-effect="#path-effect7-9"
+       inkscape:original-d="M 80,108.99999 C 76.333333,110 72.666669,111 69.000001,111.99999 65.999941,111.33332 63,110.66666 60.000001,110"
+       transform="matrix(-1,0,0,1,160,0)" />
+    <ellipse
+       style="fill:#ff8e00;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3-3"
+       cx="50"
+       cy="100"
+       rx="5"
+       ry="4.9999995" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="M 50.000001,105.00001 V 120"
+       id="path4-1" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 45.000001,125 5,-5 5,5.00001"
+       id="path5-1" />
+    <circle
+       id="path6-3"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="49.94873"
+       cy="110.10712"
+       r="0.016255468" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:0.113761"
+       id="path8"
+       cx="59.75"
+       cy="110.25566"
+       rx="1"
+       ry="0.99999994" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5.000017,1.50001 1.666684,0.16666 3.333319,-0.16667 4.999984,-0.5"
+       id="path9"
+       inkscape:path-effect="#path-effect9"
+       inkscape:original-d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5,2.00001 1.666701,-0.33334 3.333335,-0.66667 5.000001,-1" />
+    <ellipse
+       style="fill:#ff8e00;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3-3-8"
+       cx="-110.00001"
+       cy="99.999977"
+       rx="5"
+       ry="4.9999995"
+       transform="scale(-1,1)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 110,105 v 14.99999"
+       id="path4-1-3" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 115,124.99999 -5,-5 L 105,125"
+       id="path5-1-2" />
+    <circle
+       id="path6-3-0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="-110.05128"
+       cy="110.10709"
+       r="0.016255468"
+       transform="scale(-1,1)" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:0.113761"
+       id="path8-5"
+       cx="-100.25"
+       cy="110.25564"
+       rx="1"
+       ry="0.99999994"
+       transform="scale(-1,1)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5.000017,1.50001 1.666684,0.16666 3.333319,-0.16667 4.999984,-0.5"
+       id="path9-3"
+       inkscape:path-effect="#path-effect9-0"
+       inkscape:original-d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5,2.00001 1.666701,-0.33334 3.333335,-0.66667 5.000001,-1"
+       transform="matrix(-1,0,0,1,160,-1.8266987e-5)" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3-9"
+       cx="80"
+       cy="155.10806"
+       rx="5"
+       ry="4.9999995" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 80.000016,160.10845 v 14.99999"
+       id="path4-2" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 75.000016,180.10844 5,-5 5,5.00001"
+       id="path5-5" />
+    <circle
+       id="path6-2"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="79.94873"
+       cy="165.21515"
+       r="0.016255468" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3-3-6"
+       cx="50.000008"
+       cy="155.10806"
+       rx="5"
+       ry="4.9999995" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 50.000014,160.10846 v 14.99999"
+       id="path4-1-35" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 45.000014,180.10845 5,-5 5,5.00001"
+       id="path5-1-3" />
+    <circle
+       id="path6-3-8"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="49.948738"
+       cy="165.21518"
+       r="0.016255468" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:0.113761"
+       id="path8-4"
+       cx="59.750008"
+       cy="165.36372"
+       rx="1"
+       ry="0.99999994" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5.000017,1.50001 1.666684,0.16666 3.333319,-0.16667 4.999984,-0.5"
+       id="path9-36"
+       inkscape:path-effect="#path-effect9-3"
+       inkscape:original-d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5,2.00001 1.666701,-0.33334 3.333335,-0.66667 5.000001,-1"
+       transform="translate(1.2346603e-5,55.108335)" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       id="path3-3-8-1"
+       cx="-110.00002"
+       cy="155.10803"
+       rx="5"
+       ry="4.9999995"
+       transform="scale(-1,1)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 110.00001,160.10845 v 14.99999"
+       id="path4-1-3-6" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 115.00001,180.10844 -5,-5 -5,5.00001"
+       id="path5-1-2-7" />
+    <circle
+       id="path6-3-0-9"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="-110.05128"
+       cy="165.21515"
+       r="0.016255468"
+       transform="scale(-1,1)" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:0.113761"
+       id="path8-5-8"
+       cx="-100.25002"
+       cy="165.36369"
+       rx="1"
+       ry="0.99999994"
+       transform="scale(-1,1)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5.000017,1.50001 1.666684,0.16666 3.333319,-0.16667 4.999984,-0.5"
+       id="path9-3-7"
+       inkscape:path-effect="#path-effect9-0-8"
+       inkscape:original-d="m 50,108.99999 c 1.666669,0.66667 3.333334,1.33334 5,2.00001 1.666701,-0.33334 3.333335,-0.66667 5.000001,-1"
+       transform="matrix(-1,0,0,1,160.00001,55.108317)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       d="m 59.750007,145.25566 c 6.749997,-0.41856 13.499995,-0.83711 20.250066,-0.83711 6.75007,0 13.499942,0.41853 20.249947,0.83708"
+       id="path10"
+       inkscape:path-effect="#path-effect10"
+       inkscape:original-d="M 59.750007,145.25566 C 66.500004,144.8371 73.250002,144.41855 80,143.99999 c 6.750143,0.41856 13.500015,0.83709 20.25002,1.25564"
+       transform="translate(0,20.10834)" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       x="71.658737"
+       y="69.644463"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+         x="71.658737"
+         y="69.644463">溶接部</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-opacity:1"
+       x="25.698158"
+       y="69.638947"
+       id="text10-9"><tspan
+         sodipodi:role="line"
+         id="tspan10-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+         x="25.698158"
+         y="69.638947">被溶接部材</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#ArrowWide)"
+       d="M 80,69.999997 79.999998,77.5"
+       id="path11" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 40.000002,69.999997 55,84.999996"
+       id="path12" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="47.895737"
+       y="101.61644"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="47.895737"
+         y="101.61644">被</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="47.895744"
+       y="156.7245"
+       id="text12-5"><tspan
+         sodipodi:role="line"
+         id="tspan12-4"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="47.895744"
+         y="156.7245">被</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="107.89574"
+       y="101.61642"
+       id="text12-5-1"><tspan
+         sodipodi:role="line"
+         id="tspan12-4-2"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="107.89574"
+         y="101.61642">被</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="107.89573"
+       y="156.72447"
+       id="text12-5-1-7"><tspan
+         sodipodi:role="line"
+         id="tspan12-4-2-1"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="107.89573"
+         y="156.72447">被</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="77.896774"
+       y="156.74828"
+       id="text12-5-1-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan12-4-2-1-3"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="77.896774"
+         y="156.74828">溶</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="77.896774"
+       y="101.64021"
+       id="text12-5-1-7-0-5"><tspan
+         sodipodi:role="line"
+         id="tspan12-4-2-1-3-2"
+         style="font-size:4.23333px;stroke:none;stroke-width:0.5"
+         x="77.896774"
+         y="101.64021">溶</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="11.155899"
+       y="114.16051"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="stroke-width:0.5"
+         x="11.155899"
+         y="114.16051" /></text>
+    <path
+       style="fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 74.75,170.53835 60.000001,170.28834"
+       id="path13" />
+    <path
+       style="fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide-7)"
+       d="m 85.250032,170.53835 14.749998,-0.25001"
+       id="path13-2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="14.960726"
+       y="106.38092"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="14.960726"
+         y="106.38092">溶接間も無く</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="14.689941"
+       y="161.48897"
+       id="text14-1"><tspan
+         sodipodi:role="line"
+         id="tspan14-7"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="14.689941"
+         y="161.48897">時間経過後</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="44.964859"
+       y="188.61734"
+       id="text14-1-2-4"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="44.964859"
+         y="188.61734"
+         id="tspan15">溶接部は温度低下により収縮しようとするが，</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="44.964859"
+         y="193.909"
+         id="tspan17">温度膨張具合が異なる部分が拘束となる．</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="44.964859"
+         y="199.20067"
+         id="tspan18">結果として引張応力の残留応力が発生．</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI';fill:#ff8e00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="44.960728"
+       y="133.54707"
+       id="text14-1-2-4-0"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="44.960728"
+         y="133.54707"
+         id="tspan15-7">溶接部では温度上昇により膨張する．</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+         x="44.960728"
+         y="138.83873"
+         id="tspan16">溶接部から離れれば膨張具合も小さくなる．</tspan></text>
+  </g>
+</svg>
